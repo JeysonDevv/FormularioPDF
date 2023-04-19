@@ -89,7 +89,7 @@
                             </div>
                         </div>
                         <hr class="my-4">
-                        <h4 class="mb-3 m2-2">Datos del cliente</h4>
+                        <h4 class="mb-3 m2-2">Datos del Cliente</h4>
 
                         <div class="row g-4">
                             <div class="col-lg-3">
@@ -167,6 +167,52 @@
                                 <div class="invalid-feedback">Debe ingresar el estado civil.💔</div>
                             </div>
                         </div>
+                        <hr class="my-4">
+                        <h4 class="mb-3 m2-2">Programación de la Cita</h4>
+
+                        <div class="row g-4">
+                            <div class="col-lg-2">
+                                <label for="fecha_cita" class="form-label">Fecha de la cita:</label>
+                                <input name="Fecha-Cita" type="date" class="form-control" id="fecha_cita"
+                                    placeholder="Ingrese la fecha" required />
+                                <div class="valid-feedback">Correcto❤️!</div>
+                                <div class="invalid-feedback">Debe ingresar la fecha de la cita.💔</div>
+                            </div>
+
+                            <div class="col-lg-2">
+                                <label for="hora_cita" class="form-label">Hora de la cita:</label>
+                                <input name="Hora-Cita" type="time" class="form-control" id="hora_cita"
+                                    placeholder="Ingrese la hora" required />
+                                <div class="valid-feedback">Correcto❤️!</div>
+                                <div class="invalid-feedback">Debe ingresar la hora de la cita.💔</div>
+                            </div>
+
+                            <div class="col-lg-2">
+                                <label for="idioma" class="form-label">Idioma:</label>
+                                <select name="Idioma" type="text" class="form-select" id="idioma"
+                                    placeholder="Ingrese el idioma" required>
+                                    <option>Español</option>
+                                    <option>Ingles</option>
+                                    <option>Portugués</option>
+                                </select>
+                                <div class="valid-feedback">Correcto❤️!</div>
+                                <div class="invalid-feedback">Debe ingresar el idioma.💔</div>
+                            </div>
+                        </div>
+
+                        <div class="row g-4">
+                            <div class="row-col-lg-5">
+                                <label for="consulta" class="form-label">Consulta:</label>
+                                <textarea name="Consulta" type="text" class="form-control" rows="6" id="consulta"
+                                    placeholder="Motivo de la consulta" required>
+                                </textarea>
+                                <div class="valid-feedback">Correcto❤️!</div>
+                                <div class="invalid-feedback">Debe ingresar el motivo de la consulta.💔</div>
+                            </div>
+                        </div>
+
+                        <hr>
+
                     </form>
                 </main>
             </div>
