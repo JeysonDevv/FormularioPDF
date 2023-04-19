@@ -266,6 +266,27 @@
                         doc.setTextColor(255, 255, 255);
                         doc.text("CARDICVAS: CITAS MÉDICAS", 60, 30)
 
+                        doc.setTextColor(0, 0, 0)
+                        // Agregamos la información del formulario al documento PDF
+                        doc.text(20, 70, "Nombre del médico: " + nombre_medico);
+                        doc.text(20, 80, "Apellido del médico: " + apellido_medico);
+                        doc.text(20, 90, "Fecha de registro: " + fecha_registro);
+                        doc.text(20, 100, "Nombre del cliente: " + nombre_cliente);
+                        doc.text(20, 110, "Apellido del cliente: " + apellido_cliente);
+                        doc.text(20, 120, "Teléfono 1: " + telefono_1);
+                        doc.text(20, 130, "Teléfono 2: " + telefono_2);
+                        doc.text(20, 140, "Residencia del cliente: " + direccion_cliente);
+                        doc.text(20, 150, "Email del cliente: " + correo);
+                        doc.text(20, 160, "Género: " + genero);
+                        doc.text(20, 170, "Estado civil: " + estado_civil);
+                        doc.text(20, 180, "Fecha de la cita: " + fecha_cita);
+                        doc.text(20, 190, "Hora de la cita: " + hora_cita);
+                        doc.text(20, 200, "Idioma: " + idioma);
+                        doc.text(20, 210, "Motivo de consulta: " + consulta);
+
+                        // Guardamos el documento PDF con el nombre "cita_medica.pdf"
+                        doc.save("cita_medica.pdf");
+
                     }
 
                     form.classList.add('was-validated')
@@ -273,7 +294,6 @@
             })
         })()
     </script>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
         integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
